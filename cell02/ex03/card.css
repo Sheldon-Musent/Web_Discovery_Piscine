@@ -1,0 +1,63 @@
+head{
+  padding: 10px;
+}
+
+body{
+    display: block;
+}
+
+.title{
+  padding: 16px;
+  font-size: 28px;
+  font-weight: bold;
+  text-align: center;
+}
+
+.card {
+    width: 400px;
+    margin: 0 auto;
+    text-align: center;
+    box-shadow: 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    border: 1px solid rgb(255, 255, 255);
+    border-radius: 8px;
+}
+
+.img img {
+    width: 400px;
+    height: 390px;
+    object-fit: cover;
+    object-position: 50% 40%;
+}
+
+.name {
+    padding: 16px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 25px;
+    font-weight: 900;
+    font-family: Georgia, 'Times New Roman', Times, serif
+}
+
+.description{
+  padding: 6px;
+  font-size: 20px;
+  font-family: Georgia, 'Times New Roman', Times, serif
+}
+
+.icon {
+    padding: 18px;
+    display: grid; gap: 4px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.contact {
+    height: 45px;
+    color: white;
+    background-color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
