@@ -3,10 +3,9 @@ body{
       }
 
       .box{
-        width: 100%;
-        line-height: 100px;
+        width: 100%;            /*% works for width naturally, but for height you need vh to fill the full screen.*/
         height: 100vh;
-        table-layout: fixed;
+        table-layout: fixed;    /*if is not fixed the size will be resize based on the content 'left' & 'right'*/
       }
 
       .box1{
@@ -15,17 +14,4 @@ body{
 
       .box2{
         background-color: red;
-      }
-
-      .box1:hover{
-        background-color: rgb(255, 255, 255);
-      }
-
-      .box2:hover{
-        background-color: rgb(65, 65, 65);
-      }
-
-      td {
-        width: 50%;
-        outline: 1px solid black;
       }

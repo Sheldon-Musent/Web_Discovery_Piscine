@@ -1,32 +1,44 @@
 <html>
 
   <head>
-    <title>
-      Basics
-    </title>
+    <title>Basics</title>
 
     <style>
-      h1 {text-align: center; color: white;}
-      body {text-align: center;}
+      h1 {text-align: center; color: white;} /*make it center & white*/
+      body {text-align: center;}               /*make it center & white*/
       img {
         width: auto;
         height: 400px;
       }
-      hr {
-        border-bottom: 1px;
-        height: 1px;
-        background-color: #000000;
-        margin: auto;
+
+      hr {                                    /*line style*/
+         position: fixed;
+          bottom: 30px;                         
+          left: 0;
+          width: 100%;
+          border: none;                       /*remove default border line*/
+          height: 1px;
+          background-color: #000000;        
       }
+
+      p {
+        position: fixed;
+        bottom: 0;
+        right: 0;
+        font-style: italic;
+        font-family: monospace;
+      }
+
     </style>
   </head>
 
-  <body style="background-color:#FFC0CB;">
+  <body style="background-color:#FFC0CB;">      <!--pink-->
     <h1>Welcome to Shopping & More!</h1>
 
-    <div style="display: inline-block;">
+    <!-- display in inline so can center by style cause style alrdy set text align center -->
+    <div style="display: inline-block;"> 
       <img src="Shopee.jpg" alt="Shopee">
-      <br>
+      <br>                                        <!--line break, next line-->
       <a href="https://shopee.com.my/">Shopee</a>
     </div>
 
@@ -36,11 +48,9 @@
       <a href="https://www.lazada.com.my/#?">Lazada</a>
     </div>
 
-    <hr>
+    <hr>                                           <!--line style-->
     
-    <p style="text-align: right; font-style: italic; font-family: monospace;">
-    &copy; shechen 2026
-    </p>
+    <p>&copy; shechen 2026</p>
 
   </body>
 

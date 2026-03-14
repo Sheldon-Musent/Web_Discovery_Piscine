@@ -1,31 +1,29 @@
 body{
     margin: 0px;
+    font-size: 12px;
 }
 
 .section1 {
-    font-size: 12px;
     display: flex;
-    justify-content: center;
-    align-items: center;
+    justify-content: center;         /*center the content(text) inside the div*/
+    align-items: center;             /**center the image itself*/
     background-image: url(cat.webp);
-    background-attachment: fixed;
-    background-size: cover;
-    background-position: center;
-    min-height: 100vh;
+    background-attachment: fixed;    /*fixed the position of the background*/
+    background-size: cover;          /*scales the image to fill the entire section without cropping*/
+    background-position: center;     /*keeps the image centered*/
+    min-height: 100vh;               /*keeps the image full screen regardless of the screensize*/
 }
 
 .black-block {
-    font-size: 12px;
     display: flex;
     justify-content: center;
     align-items: center;
     color: rgb(255, 255, 255);
     background-color: black;
-    min-height: 75vh;
+    min-height: 170vh;
 }
 
 .section2 {
-    font-size: 12px;
     display: flex;
     justify-content: center;
     align-items: center;

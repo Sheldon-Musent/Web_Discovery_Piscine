@@ -1,12 +1,9 @@
 <html>
 
   <head>
-
-    <title></title>
-
+    <title>Tab</title>
     <style>
-
-      hr {
+      hr {                                      /*line style*/
         border: 0px;
         height: 1px;
         background-color: #000000;
@@ -17,23 +14,15 @@
         line-height: 100px;
         table-layout: fixed;
       }
-
-      td {
-        width: 50%;
-        outline: 1px solid black;
-      }
-
     </style>
-
   </head>
   
   <body>
-
-    <hr>
-
-    <table class="box" cellspacing="1">
-      <tr>
-          <td style="background-color: green;">
+    <hr>                                        <!--line-->
+    <table class="box" cellspacing="0">         <!-- default cell have spacing make it stick tgt -->
+      <tr>                                      <!-- tr = table row -->
+          <!-- td = one cell each td takes width 50% if 3 td will shrink to fit 33% -->
+          <td style="background-color: green;"> 
             Left
           </td>
           <td style="background-color: red;">
