@@ -1,12 +1,15 @@
 function calculate() {
-    var left = document.querySelector("#left").value;
-    var right = document.querySelector("#right").value;
-    var operator = document.querySelector("#operator").value;
-    var a = parseInt(left);
-    var b = parseInt(right);
-    var result;
+    let left = document.querySelector("#left").value;
+    let right = document.querySelector("#right").value;
+    let operator = document.querySelector("#operator").value;
+    /*get the values from the 3 input fields (left number, right number, operator)*/
+    let a = parseInt(left);
+    let b = parseInt(right);
+    /*convert the text input to integers with parseInt(convert a string to whole number*/
+    let result;
+    /*declare result and store the answer */
 
-    // if a is not a number OR b is not a number OR a is negative OR b is negative
+    // 'isNaN' if a is not a number OR b is not a number OR a is negative OR b is negative
     if (isNaN(a) || isNaN(b) || a < 0 || b < 0) {
         alert("Error :(");
         return;
@@ -27,10 +30,11 @@ function calculate() {
         result = a * b;
     } else if (operator == "/") {
         result = a / b;
-    } else if (operator == "%") {
+    } else if (operator == "%") {   
         result = a % b;
     }
 
+    //show result in console log
     alert(result);
     console.log(result);
 }

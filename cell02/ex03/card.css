@@ -1,11 +1,3 @@
-head{
-  padding: 10px;
-}
-
-body{
-    display: block;
-}
-
 .title{
   padding: 16px;
   font-size: 28px;
@@ -17,22 +9,29 @@ body{
     width: 400px;
     margin: 0 auto;
     text-align: center;
+    /*horizontal, vertical, blur, spread, RGBAlpha (opacity)*/
     box-shadow: 0 6px 20px 0 rgba(0, 0, 0, 0.19);
     border: 1px solid rgb(255, 255, 255);
     border-radius: 8px;
 }
 
-.img img {
+    /*Targete class=img's img item not all img on the page*/
+.profile-pic img {
     width: 400px;
     height: 390px;
+    /*scales the image to fit the the box (div) without stretching*/
     object-fit: cover;
+    /*position in horizontal 50% & vertical 40%*/
     object-position: 50% 40%;
 }
 
 .name {
     padding: 16px;
+    /*adjust both hori & verti at the same time*/
     display: flex;
+    /*horizontal center*/
     justify-content: center;
+    /*vertical center*/
     align-items: center;
     font-size: 25px;
     font-weight: 900;

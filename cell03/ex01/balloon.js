@@ -1,6 +1,8 @@
-var size = 200;
-var colors = ["red", "green", "blue"];
-var colorIndex = 0;
+/*declared the value & color */
+let size = 200;
+let colors = ["red", "green", "blue"];
+/*It starts at 0 (red), then becomes 1 (green), then 2 (blue), then resets back to 0.*/
+let colorIndex = 0;
 
 function grow() {
     size = size + 10;
@@ -13,7 +15,8 @@ function grow() {
         size = 200;
     }
 
-    var balloon = document.querySelector(".balloon");
+    let balloon = document.querySelector(".balloon");
+    /*no 'let' needed, just assigning values not declaring new variables */
     balloon.style.width = size + "px";
     balloon.style.height = size + "px";
     balloon.style.backgroundColor = colors[colorIndex];
